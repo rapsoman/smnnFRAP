@@ -5,6 +5,12 @@ smnnFRAP permits inference of kinetic parameters from FRAP data (diffusion coeff
 - **Stochastic model module**: simulate a stochastic hybrid model of FRAP experiments to acquire in silico FRAP curves
 - **Parameter inference**: using a library of simulated FRAP curves, perform parameter inference on FRAP data
 
+To simulate the model simply run:
+```
+[trec,xrec,qrec,brec]=simulation_code(d,res_time,Fimm)
+```
+where: `d` the diffusion coefficient sigma, `res_time` the protein residence time and `Fimm` the protein bound fraction.
+
 smnnFRAP was developed as a collaboration between the *Cell Cycle Lab of the University of Patras*, the *IBIS* team at *INRIA-Grenoble – Rhône-Alpes* and the *Automatic Control Lab* at *ETH Zurich*. It is freely distributed, available under the General Public License version 3 (GPL v3).
 
 If you find our work useful please cite: 
